@@ -4,8 +4,12 @@
   "description": "scripts",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -w",
+    "watch": "webpack -w",
+    "start": "webpack-dev-server --open",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": ["env", "react"]
   },
   "author": "",
   "license": "ISC",
